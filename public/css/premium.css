@@ -1,0 +1,85 @@
+/* ============================================
+   НАЙДУК — Премиальные стили (анимации, эффекты)
+   Версия 1.0 (март 2026)
+   ============================================ */
+
+/* Скелетоны */
+.skeleton {
+    background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--border-light) 50%, var(--bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: var(--radius);
+}
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .skeleton {
+        animation: none;
+        background: var(--bg-secondary);
+    }
+}
+.skeleton-text {
+    height: 16px;
+    margin-bottom: 8px;
+}
+.skeleton-title {
+    height: 24px;
+    width: 60%;
+    margin-bottom: 16px;
+}
+.skeleton-card {
+    height: 200px;
+    border-radius: var(--radius-xl);
+}
+.skeleton-delay-1 { animation-delay: 0.1s; }
+.skeleton-delay-2 { animation-delay: 0.2s; }
+.skeleton-delay-3 { animation-delay: 0.3s; }
+
+/* Анимация появления */
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Золотое свечение для премиум-элементов */
+.premium-glow {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    transition: box-shadow 0.2s;
+}
+.premium-glow:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+/* Карточка с наклоном при наведении (3D‑эффект для фото) */
+.card-3d {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-3d:hover {
+    transform: translateY(-6px) rotateX(2deg);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Блик для кнопок */
+.btn-gloss {
+    position: relative;
+    overflow: hidden;
+}
+.btn-gloss::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+    transform: rotate(25deg);
+    transition: left 0.5s;
+}
+.btn-gloss:hover::after {
+    left: 100%;
+}

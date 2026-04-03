@@ -1,0 +1,90 @@
+/* ============================================
+   НАЙДУК — Темы оформления (светлая, тёмная, нейтральная, контрастная, природная)
+   Версия 1.0 (март 2026)
+   ============================================ */
+
+/* Базовые переменные (светлая тема по умолчанию) */
+:root {
+    --primary: #4A90E2;
+    --primary-dark: #2E5C8A;
+    --primary-light: #6BA5E7;
+    --accent: #FF6B35;
+    --accent-gold: #FFD700;
+    --success: #34C759;
+    --warning: #FF9500;
+    --danger: #FF3B30;
+    --info: #5A67D8;
+    --bg: #F5F5F7;
+    --bg-secondary: #EFEFF4;
+    --surface: #FFFFFF;
+    --text: #1D1D1F;
+    --text-secondary: #86868B;
+    --border: #D2D2D7;
+    --border-light: #E5E5EA;
+    --radius: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
+    --transition: 0.2s ease;
+}
+
+/* Тёмная тема */
+html.dark {
+    --bg: #000000;
+    --bg-secondary: #1C1C1E;
+    --surface: #1C1C1E;
+    --text: #F5F5F7;
+    --text-secondary: #A1A1A6;
+    --border: #38383A;
+    --border-light: #2C2C2E;
+}
+
+/* Нейтральная тема */
+html[data-theme="neutral"] {
+    --primary: #6C6F78;
+    --primary-dark: #4A4D55;
+    --primary-light: #8E919C;
+    --accent: #9B8E6B;
+    --accent-gold: #B5A572;
+    --bg: #F2F1EF;
+    --bg-secondary: #E8E6E2;
+    --surface: #FFFFFF;
+    --text: #2C2B28;
+    --text-secondary: #6F6D6A;
+    --border: #D9D7D3;
+}
+
+/* Контрастная тема */
+html[data-theme="contrast"] {
+    --primary: #0078D7;
+    --primary-dark: #005A9E;
+    --primary-light: #2D9CFF;
+    --accent: #FF8C00;
+    --accent-gold: #FFB347;
+    --bg: #FFFFFF;
+    --bg-secondary: #F0F0F0;
+    --surface: #FFFFFF;
+    --text: #000000;
+    --text-secondary: #3C3C3C;
+    --border: #000000;
+    --border-light: #6C6C6C;
+}
+
+/* Природная тема */
+html[data-theme="nature"] {
+    --primary: #2C6E2F;
+    --primary-dark: #1D4A1F;
+    --primary-light: #4A934D;
+    --accent: #D4A373;
+    --accent-gold: #E9B87D;
+    --bg: #FEF9E6;
+    --bg-secondary: #F2EBD9;
+    --surface: #FFFFFF;
+    --text: #2F3E2F;
+    --text-secondary: #6B7C6B;
+    --border: #C7B69C;
+    --border-light: #E0D5BF;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "nayduk/nayduk",
+    "description": "Найдук — партнёрская платформа нового поколения",
+    "type": "project",
+    "require": {
+        "php": ">=8.2",
+        "league/plates": "^4.0",
+        "slim/csrf": "^1.2",
+        "guzzlehttp/guzzle": "^7.0",
+        "endroid/qrcode": "^4.0",
+        "yookassa/yookassa-sdk-php": "^2.0",
+        "vlucas/phpdotenv": "^5.5",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "includes/functions.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

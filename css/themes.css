@@ -1,0 +1,120 @@
+/* ============================================
+   НАЙДУК — Темы оформления (v1.0)
+   ============================================ */
+
+/* ===== СВЕТЛАЯ ТЕМА (по умолчанию) ===== */
+:root {
+    --bg: #F5F5F7;
+    --bg-secondary: #EFEFF4;
+    --surface: #FFFFFF;
+    --text: #1D1D1F;
+    --text-secondary: #86868B;
+    --border: #D2D2D7;
+    --border-light: #E5E5EA;
+    --primary: #4A90E2;
+    --primary-dark: #2E5C8A;
+    --primary-light: #6BA5E7;
+    --accent: #FF6B35;
+    --success: #34C759;
+    --warning: #FF9500;
+    --danger: #FF3B30;
+    --info: #5A67D8;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
+    --radius-sm: 6px;
+    --radius: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-2xl: 28px;
+    --radius-full: 9999px;
+    --transition: 0.2s ease;
+}
+
+/* ===== ТЁМНАЯ ТЕМА (профессиональная) ===== */
+[data-theme="dark"] {
+    --bg: #000000;
+    --bg-secondary: #1C1C1E;
+    --surface: #1C1C1E;
+    --text: #F5F5F7;
+    --text-secondary: #A1A1A6;
+    --border: #38383A;
+    --border-light: #2C2C2E;
+    --primary: #6BA5E7;
+    --primary-dark: #4A90E2;
+    --primary-light: #8AB8F0;
+    --accent: #FF8A5C;
+    --success: #4CD964;
+    --warning: #FF9F4A;
+    --danger: #FF5E5E;
+    --info: #6C78D1;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+/* ===== НЕЙТРАЛЬНАЯ ТЕМА (офис) ===== */
+[data-theme="neutral"] {
+    --bg: #FAFAFA;
+    --bg-secondary: #F0F0F0;
+    --surface: #FFFFFF;
+    --text: #2D3748;
+    --text-secondary: #718096;
+    --border: #E2E8F0;
+    --border-light: #EDF2F7;
+    --primary: #2C5282;
+    --primary-dark: #1A365D;
+    --primary-light: #4A6A8F;
+    --accent: #F6AD55;
+    --success: #48BB78;
+    --warning: #ED8936;
+    --danger: #F56565;
+    --info: #5A67D8;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* ===== КОНТРАСТНАЯ ТЕМА (акционная) ===== */
+[data-theme="contrast"] {
+    --bg: #FFFFFF;
+    --bg-secondary: #F8F9FA;
+    --surface: #FFFFFF;
+    --text: #000000;
+    --text-secondary: #4A5568;
+    --border: #E2E8F0;
+    --border-light: #EDF2F7;
+    --primary: #FF6B35;
+    --primary-dark: #E05A2A;
+    --primary-light: #FF8A5C;
+    --accent: #FF3B30;
+    --success: #2C9B4E;
+    --warning: #E68600;
+    --danger: #C72A2A;
+    --info: #4C51BF;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.16);
+}
+
+/* ===== ПРИРОДНАЯ ТЕМА (эко/здоровье) ===== */
+[data-theme="nature"] {
+    --bg: #F5F7F0;
+    --bg-secondary: #EAEDE3;
+    --surface: #FFFFFF;
+    --text: #2D3E2D;
+    --text-secondary: #5C6E5C;
+    --border: #D0DDC5;
+    --border-light: #E2EBD9;
+    --primary: #6B8E23;
+    --primary-dark: #5A7A1F;
+    --primary-light: #8AAE4A;
+    --accent: #9BBB58;
+    --success: #5A9E4E;
+    --warning: #D9A13B;
+    --danger: #CD5C5C;
+    --info: #5F9EA0;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.07);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.1);
+}

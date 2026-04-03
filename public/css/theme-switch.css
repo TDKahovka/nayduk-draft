@@ -1,0 +1,27 @@
+/* ============================================
+   НАЙДУК — Переключатель темы (светлая/тёмная)
+   Версия 1.0 (март 2026)
+   ============================================ */
+
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--bg-secondary);
+    padding: 4px;
+    border-radius: var(--radius-full);
+}
+.theme-option {
+    padding: 4px 8px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition);
+    font-size: 14px;
+}
+.theme-option.active {
+    background: var(--primary);
+    color: white;
+}
+.theme-option:hover:not(.active) {
+    background: var(--bg);
+}

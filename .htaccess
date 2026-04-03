@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Если файл или папка существуют – отдаём напрямую
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Страница товара: /product/123 -> product.php?id=123
+    RewriteRule ^product/(\d+)/?$ product.php?id=$1 [L,QSA]
+
+    # Страница магазина: /shop/название-магазина -> shop.php?slug=название-магазина
+    RewriteRule ^shop/([^/]+)/?$ shop.php?slug=$1 [L,QSA]
+
+    # Если ничего не подошло – можно перенаправить на главную или вернуть 404
+    # (раскомментируйте при необходимости)
+    # RewriteRule ^ index.php [L]
+</IfModule>

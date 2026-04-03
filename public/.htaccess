@@ -1,0 +1,38 @@
+<?php
+/* ============================================
+   НАЙДУК — Front Controller (роутинг)
+   Версия 1.0
+   ============================================ */
+
+$requestUri = $_SERVER['REQUEST_URI'];
+$scriptName = $_SERVER['SCRIPT_NAME'];
+
+// Обрезаем параметры запроса
+if (strpos($requestUri, '?') !== false) {
+    $requestUri = substr($requestUri, 0, strpos($requestUri, '?'));
+}
+
+// Обработка /shop/{slug}
+if (preg_match('#^/shop/([^/]+)/?$#', $requestUri, $matches)) {
+    $_GET['slug'] = $matches[1];
+    require __DIR__ . '/../shop.php';
+    exit;
+}
+
+// Обработка /product/{id}
+if (preg_match('#^/product/(\d+)/?$#', $requestUri, $matches)) {
+    $_GET['id'] = $matches[1];
+    require __DIR__ . '/../product.php';
+    exit;
+}
+
+// Остальные маршруты – стандартные файлы
+$path = __DIR__ . '/..' . $requestUri;
+if (is_file($path) && preg_match('/\.(php|html?)$/', $path)) {
+    require $path;
+    exit;
+}
+
+// Если ничего не подошло – 404
+http_response_code(404);
+echo '<h1>404 Not Found</h1>';
